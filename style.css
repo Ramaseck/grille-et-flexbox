@@ -1,0 +1,79 @@
+body{
+    background: rgb(231, 230, 230);
+    max-width: 960px;
+    margin: auto;
+}
+/*partie flexbox */
+.flexbox .container{
+    background-color: wheat;
+    display: flex;
+    padding:20px;
+    flex-direction:row;
+    justify-content: space-around;
+}
+/* pour eviter trop de repeter trop de code qui ont les même propriété on ajoute une  nom de class sur html et on procéde ainsi sur hrml*/
+.flexbox .container .card{
+    color: white;
+    width: 200px;
+    padding: 10px;
+}
+.flexbox .container .card-1{
+    background: black;
+    
+}
+.flexbox .container .card-2{
+    background: rgb(66, 4, 235);
+}
+    
+.flexbox .container .card-3{
+    background: rgb(224, 11, 11);
+    
+    flex-grow: 2;
+    
+
+}
+.flexbox .container .card-4{
+    background: rgb(3, 90, 3);
+    
+    
+    
+}
+
+/* ..partie Grid */
+.Grid .container{
+    background-color: wheat;
+    display: grid;
+    padding:20px;
+    grid-template-columns: auto auto auto auto ;
+    grid-template-columns: repeat(2,1fr);
+
+}
+
+.Grid .container .card{
+    color: white;
+    width: 200px;
+    padding: 10px;
+}
+.Grid .container .card-1{
+    background: black;
+    
+}
+.Grid .container .card-2{
+    background: rgb(66, 4, 235);
+}
+    
+.Grid .container .card-3{
+    background: rgb(224, 11, 11);
+    
+    flex-grow: 2;
+    
+
+}
+.Grid .container .card-4{
+    background: rgb(3, 90, 3);
+    
+    
+    
+}
+
+
